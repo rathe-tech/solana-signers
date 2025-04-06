@@ -1,0 +1,24 @@
+{
+  "name": "@rathe/solana-signers",
+  "version": "1.0.0",
+  "author": "Max Koverdyaev",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "homepage": "https://github.com/rathe-tech/solana-signers",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^1.80.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.80.0"
+  },
+  "dependencies": {
+    "@ledgerhq/hw-app-solana": "^7.3.0",
+    "@ledgerhq/hw-transport-node-hid": "^6.29.5",
+    "tweetnacl": "^1.0.3"
+  }
+}
