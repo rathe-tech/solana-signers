@@ -60,9 +60,6 @@ if (result.value.err != null) {
 
 ```
 
-## Compatibility
-As this library is fully compatible with `bn.js` you can use it in [the same way](https://github.com/indutny/bn.js#instructions).
-
 ## License
 
 [MIT](LICENSE)
