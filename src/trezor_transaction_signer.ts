@@ -24,7 +24,7 @@ export class TrezorTransactionSigner implements TransactionSigner {
       serializedTx: Buffer.from(transaction.compileMessage().serialize()).toString("hex"),
     });
     if (!result.success) {
-      throw new Error("Could not sign transaction");
+      throw new Error(`Could not sign transaction: ${result.payload.error}`);
     }
     const { payload: { signature } } = result;
     transaction.addSignature(this.#publicKey, Buffer.from(signature, "hex"));
@@ -36,7 +36,7 @@ export class TrezorTransactionSigner implements TransactionSigner {
       serializedTx: Buffer.from(transaction.message.serialize()).toString("hex"),
     });
     if (!result.success) {
-      throw new Error("Could not sign transaction");
+      throw new Error(`Could not sign transaction: ${result.payload.error}`);
     }
     const { payload: { signature } } = result;
     transaction.addSignature(this.#publicKey, Buffer.from(signature, "hex"));
