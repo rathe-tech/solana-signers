@@ -1,6 +1,6 @@
 {
   "name": "@rathe/solana-signers",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "author": "Max Koverdyaev",
   "license": "MIT",
   "main": "lib/index.js",
@@ -19,6 +19,7 @@
   "dependencies": {
     "@ledgerhq/hw-app-solana": "^7.3.0",
     "@ledgerhq/hw-transport-node-hid": "^6.29.5",
+    "@trezor/connect": "9.4.2",
     "tweetnacl": "^1.0.3"
   }
 }
