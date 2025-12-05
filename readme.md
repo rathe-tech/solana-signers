@@ -116,7 +116,7 @@ const rpcUrl = "YOUR_RPC_URL";
 const connection = new Connection(rpcUrl, "confirmed");
 
 const path = "TREZOR_WALLET_PATH"; // Can be found in the Trezor Suite app
-const signer = await TrezorTransactionSigner.TrezorTransactionSigner({ path });
+const signer = await TrezorTransactionSigner.create({ path });
 
 const fromAddress = signer.publicKey;
 const toKeypair = Keypair.generate();
